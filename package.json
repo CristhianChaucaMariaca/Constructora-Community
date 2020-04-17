@@ -1,7 +1,7 @@
 {
-  "name": "carvajal",
+  "name": "community",
   "version": "1.0.0",
-  "description": "Pagina Web de Constructora Carvajal",
+  "description": "Pagina Web de Constructora Community",
   "main": "src/js/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,9 +9,17 @@
     "build": "webpack --mode=production",
     "build:dev": "webpack --mode=development"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CristhianChaucaMariaca/Constructora-Community.git"
+  },
   "keywords": [],
   "author": "CristhianCarlosChaucaMariaca",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CristhianChaucaMariaca/Constructora-Community/issues"
+  },
+  "homepage": "https://github.com/CristhianChaucaMariaca/Constructora-Community#readme",
   "dependencies": {},
   "devDependencies": {
     "css-loader": "^3.5.2",
