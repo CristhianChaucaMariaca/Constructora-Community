@@ -1,0 +1,29 @@
+{
+  "name": "carvajal",
+  "version": "1.0.0",
+  "description": "Pagina Web de Constructora Carvajal",
+  "main": "src/js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server:dev": "webpack-dev-server",
+    "build": "webpack --mode=production",
+    "build:dev": "webpack --mode=development"
+  },
+  "keywords": [],
+  "author": "CristhianCarlosChaucaMariaca",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "css-loader": "^3.5.2",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.2.0",
+    "node-sass": "^4.13.1",
+    "pug": "^2.0.4",
+    "pug-loader": "^2.4.0",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.1.4",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  }
+}
