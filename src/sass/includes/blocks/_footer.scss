@@ -1,0 +1,20 @@
+footer{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: $primary;
+    color:$secondary;
+    a{
+        color:$secondary;
+        &:hover{
+            color:$secondary-hover;
+        }
+    }
+}
+.copy-right{
+    background-color: $secondary;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    p{
+        color:$secondary-hover;
+    }
+}

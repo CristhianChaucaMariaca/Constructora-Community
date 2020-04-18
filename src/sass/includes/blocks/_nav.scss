@@ -1,0 +1,31 @@
+nav{
+    @include flex;
+    @include shadow_bottom;
+    vertical-align: baseline;
+    ul{
+        list-style: none;
+        text-align: right;
+        li{
+            display: inline-block;
+            padding: 45px 0;
+            padding-left: 5px;
+            padding-right: 5px;
+            margin-left: 10px;
+            margin-right: 10px;
+            vertical-align: top;
+            a{
+                text-decoration: none;
+                font-size: 100%;
+                text-transform: uppercase;
+                position: relative;
+                z-index: 1;
+                color:$secondary;
+                transition: .3s;
+                &:hover{
+                    color:$secondary-hover;
+                }
+            }
+        }
+    }
+    
+}

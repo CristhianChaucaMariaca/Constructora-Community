@@ -1,0 +1,39 @@
+// /* Margin Top */
+// @for $i from 1 to 20 {
+//     margin-top: $i*10px !important;
+// }
+// /* Margin Bottom */
+// @for $i from 0 to 20 {
+//     margin-bottom: $i*10px !important;
+// }
+@mixin margin($inicial,$type, $cant) {
+    @for $i from 0 to $cant {
+        .m#{$inicial}-#{$i}{
+            margin-#{$type}: $i*10px !important;
+        }
+    }
+}
+@mixin padding($inicial,$type, $cant) {
+    @for $i from 0 to $cant {
+        .p#{$inicial}-#{$i}{
+            padding-#{$type}: $i*10px !important;
+        }
+    }
+}
+/* Margin bottom */
+@include margin('b','bottom', 20);
+/* Margin top */
+@include margin('t','top', 20);
+/* Margin left */
+@include margin('l','left', 20);
+/* Margin Right */
+@include margin('r','right', 20);
+
+/* Padding Bottom */
+@include padding('b','bottom', 20);
+/* Padding Top */
+@include padding('t','top', 20);
+/* Padding Left */
+@include padding('l','left', 20);
+/* Padding Right */
+@include padding('r','right', 20);

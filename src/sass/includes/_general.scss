@@ -1,0 +1,20 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+img{
+    max-width: 100%;
+}
+.hr{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 1px;
+    background-color: $primary-hover;
+    filter: opacity(.3);
+}
