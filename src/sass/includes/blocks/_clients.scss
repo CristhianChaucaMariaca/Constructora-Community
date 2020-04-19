@@ -1,0 +1,12 @@
+.clients{
+    img{
+        width: 100px;
+        height: 100px;
+        margin:$space;
+        transition: .3s;
+        &:hover{
+            transform: scale(1.2);
+            z-index: 1;
+        }
+    }
+}

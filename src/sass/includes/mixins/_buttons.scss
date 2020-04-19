@@ -1,0 +1,10 @@
+@mixin btn {
+    text-decoration: none;
+    position: relative;
+    padding:15px;
+    border-radius: 5px;
+    &:hover{
+        @include shadow_btn;
+        transform: scale(1.01);
+    }
+}

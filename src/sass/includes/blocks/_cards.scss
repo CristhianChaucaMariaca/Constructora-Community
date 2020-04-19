@@ -1,0 +1,19 @@
+.cards{
+    @include flex;
+    justify-content: space-between;
+    .card{
+        width: 220px;
+        // margin-left: $space;
+        // margin-right: $space;
+        .card-title{
+            text-align: center;
+            margin-bottom: $space;
+        }
+        .card-description{
+            text-align:  center;
+            p{
+                color:$secondary;
+            }
+        }
+    }
+}

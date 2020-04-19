@@ -1,0 +1,60 @@
+.header-video{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    .transparencia{
+        background-color: $secondary-hover;
+        opacity: .6;
+        position: absolute;
+        display: block;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        @include flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        img{
+            opacity: .2;
+        }
+    }
+    video{
+        max-width: 100%;
+        width: 100%;
+        z-index: -1;
+    }
+    .header-content{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        .container{
+            height: 100%;
+            .contenido{
+                display: flex;
+                height: 100%;
+                align-items: center;
+                flex-wrap: wrap;
+                align-content: center;
+                .item-contenido{
+                    width: 100%;
+                    h2{
+                        color:$primary;
+                        font-size: 2.5em;
+                    }
+                    p{
+                        font-size: 2em;
+                        color:$secondary-hover;
+                    }
+                }
+            }
+            
+        }
+    }
+}

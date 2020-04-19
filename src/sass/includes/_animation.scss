@@ -1,0 +1,13 @@
+.show{
+    animation: show 1.5s;
+}
+@keyframes show{
+    0%{
+        transform: scale(0) rotateX(-65deg);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1) rotateX(0deg);
+        opacity: 1;
+    }
+}

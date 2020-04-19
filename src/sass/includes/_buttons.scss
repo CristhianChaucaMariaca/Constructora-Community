@@ -1,0 +1,15 @@
+.btn{
+    @include btn;
+}
+.btn-primary{
+    background-color: $primary;
+    color:$secondary-hover;
+    transition: .3s;
+    &:hover{
+        background-color: $primary-hover;
+    }
+}
+.block-btn{
+    padding-top: $space;
+    @include flex;
+}

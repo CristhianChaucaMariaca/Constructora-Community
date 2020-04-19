@@ -4,22 +4,33 @@ body{
     h1,h2,h3,h4,h5,h6{
         margin: 0px;
         padding: 0px;
+        color:$primary-hover;
     }
-}
-p{
-
+    
 }
 .title{
     width: 100%;
+    background-color: $primary;
+    padding-bottom: 30px;
+    padding-top: 30px;
     h1{
         color:$primary;
+
+    }
+    h2{
+        font-size: 2.5em;
+        color:$color-fondo;
     }
 }
 .subtitle{
     width: 100%;
+    margin-bottom: $space;
     h2{
 
     }
+}
+.description{
+    text-align: justify;
 }
 
 .center{
