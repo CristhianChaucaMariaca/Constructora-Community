@@ -1,0 +1,51 @@
+@media screen and (max-width: 780px){
+    body{
+        header.header-video{
+            margin-top: 0px;
+        }
+        .mostrar-nav{
+            transform: translateX(0) !important;
+        }
+        .icon-menu#btn-menu{
+            display: block;
+        }
+        nav{
+            top:0px !important;
+            left: 0px !important;
+            background-color: $color-fondo;
+            width: 60vw;
+            height: 100vh;
+            transform: translateX(-60vw);
+            transition: transform .4s;
+            opacity: .9;
+            #brand{
+                width: 100%;
+                position: relative;
+                text-align: center;
+                order: 2;
+                margin-top: 40px;
+                height: 100%;
+                a{
+                    img{
+                    }
+                }
+            }
+            #nav{
+                order: 1;
+                width: 100%;
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    li{
+                        padding: 20px 0;
+                        border-bottom: 1px solid $secondary;
+                        a{
+                            margin-right: 20px;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

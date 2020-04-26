@@ -1,7 +1,29 @@
+.icon-menu#btn-menu{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    padding: 20px;
+    font-size: 1.5em;
+    background-color: $primary;
+    border-radius: 100%;
+    color: $color-fondo;
+    @include shadow;
+    cursor: pointer;
+    display: none;
+    z-index: 20;
+}
 nav{
     @include flex;
     @include shadow_bottom;
+    background-color: red;
     vertical-align: baseline;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 3;
+    background-color: $color-fondo;
+    width: 100%;
+    
     ul{
         list-style: none;
         text-align: right;
