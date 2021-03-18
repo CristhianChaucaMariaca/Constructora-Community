@@ -1,6 +1,8 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
 module.exports = {
   entry: "./src/js/index.js",
   output: {
@@ -18,11 +20,15 @@ module.exports = {
         use: ["pug-loader"],
       },
       {
-        test: /\.scss$/,
+        test: /\.(sa|sc|c)ss$/,
         use: [
+          MiniCssExtractPlugin.loader,
+          "css-loader",
+          "sass-loader",
+          /* { loader: MiniCssExtractPlugin.loader },
           { loader: "style-loader" },
           { loader: "css-loader" },
-          { loader: "sass-loader" },
+          { loader: "sass-loader" }, */
         ],
       },
       // FIXME: Resolver problema de importación de archivos con webpack
@@ -52,5 +58,6 @@ module.exports = {
       filename: "Contacto.html",
       template: path.resolve("./src/pug/pages/", "contactos.pug"),
     }),
+    new MiniCssExtractPlugin(),
   ],
 };
